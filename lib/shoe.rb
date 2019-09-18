@@ -8,10 +8,10 @@ class Shoe
     @brand = brand
     
     brand.each do |x|
-      BRANDS.include?(x)
-      
-    
-    BRANDS << brand
+      if BRANDS.include?(x) false
+        BRANDS << brand
+      end
+    end
   end
 
   def cobble
